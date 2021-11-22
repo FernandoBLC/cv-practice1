@@ -1,0 +1,897 @@
+/*
+Fonts
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+html {
+    background-image: radial-gradient(circle, #1e272e, #28323a, #323d46, #3d4853, #485460);
+}
+/*Menu design and configuration*/
+#header-welcome {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#menu ul {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+#menu li {
+    list-style: none;
+    padding: 0 0.5rem;
+    margin-right: 0.3rem;  
+} 
+
+#menu li a{
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;    
+}
+
+#menu {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+#menu li a:hover:not(.active) {
+    background: cornsilk;
+    color: black;
+    border-radius: 0.2rem;
+}
+
+#menu .active {
+    background: #D3F5FF;
+    color: black;
+    border-radius: 0.2rem;
+}
+
+/*-------------------------------------------*/
+
+/*Footer Section*/
+#footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#footer-section p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.08rem;
+    font-weight: 400;
+    text-align: center;
+}
+/*-------------------------------------------*/
+
+/*header html (aboutme, work and contactS*/
+#header-gen {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-gen #marca-agua h1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    margin-left: 0.3rem;
+}
+
+#header-gen #menu{
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+}
+/*-------------------------------------------*/
+
+/*welcome html*/
+#welcome-section {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: white;
+}
+
+#text-presentation {
+    width: 32rem;
+    margin-right: 5rem;
+    line-height: 1.5rem;
+} 
+
+#text-presentation h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 1000;
+    letter-spacing: 0.0001rem;  
+    font-size: 2.5rem;  
+}
+
+#text-presentation h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.0001rem;    
+    font-size: 2rem;
+}
+
+#text-presentation p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.0001rem;    
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#img-welcome {
+    width: 25rem;
+    height: auto;
+    border-radius: 40%;
+    transition: 0.7s;
+}
+
+#img-welcome:hover {
+    width: 30rem;
+    height: auto;
+    border-radius: 0%;
+}
+/*-------------------------------------------*/
+
+/*aboutme html*/
+#structure-full-aboutme {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto 0 auto;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#aboutme-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content-presentation {
+    display: flex;
+}
+
+#content-presentation > p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    max-width: 700px;
+    margin-left: 1rem;
+    padding: 1rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    color: white;
+    background: #264A65;
+    border-radius: 1rem;
+}
+
+#content-presentation > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3FC2BF;
+    font-size: 4rem;
+    position: relative;
+    font-weight: 600;
+}
+
+/*Passions Section*/
+#passions-section {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.5rem;
+    height: 100vh;
+    align-items: center;
+}
+
+#passions-section > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.02rem;
+    color: #9BE185;
+}
+
+#passions-tiles {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#passion-tile {
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+#passion-tile > h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.02rem;
+    color: #9BE185;
+}
+
+#passion-tile > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    letter-spacing: 0.09rem;
+    color: white;
+}
+/*----------------------------*/
+
+/*Habilidades Section*/
+#habilidades-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#habilidades-section > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+}
+
+#skills-tiles {
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-gap: 1rem 1.2rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#skill-tile {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 0.5rem;
+}
+
+#skill-tile > h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    color: #9BE185;
+}
+
+#skill-tile > h4{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    color: #9BE185;
+}
+
+#skill-tile > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+    color: white;
+}
+/*----------------------------*/
+/*-------------------------------------------*/
+
+/*work html*/
+#work-structure {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto 0 auto;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#presentation-work {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+}
+
+#work-presentation {
+    display: flex;
+}
+
+#work-presentation > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+    max-width: 700px;
+    margin-left: 1rem;
+    padding: 1rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    color: white;
+    background: #264A65;
+    border-radius: 1rem;
+}
+
+#work-presentation > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3FC2BF;
+    font-size: 4rem;
+    position: inherit;
+    font-weight: 600;
+}
+
+#works-tiles {
+    height: 100vh;
+}
+#works-tiles {
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-gap: 1rem 1.2rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#work-tile {
+    display: flex;
+    flex-direction: column;
+    line-height: 0.1rem;
+}
+
+#work-tile > p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+#work-tile > h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    color: #9BE185;
+}
+/*-------------------------------------------*/
+
+/*contact html*/
+#conact-structure {
+    display: flex;
+    flex-direction: column;
+    margin: 2.5rem auto 0 auto;
+    max-width: 1800px;
+    width: 100%;
+}
+
+#contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    height: 100vh;
+}
+
+#contact-section p{
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 0.08rem;
+    max-width: 1500px;
+    width: 100%;
+    font-weight: 400;
+}
+
+#contact-section > h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3FC2BF;
+    font-size: 4rem;
+    text-transform: uppercase;
+    position: inherit;
+    font-weight: 600;
+}
+/*-------------------------------------------*/
+
+
+
+
+/*Medias*/
+/*tablets*/
+@media (max-width: 1024px) {
+
+    /*welcome html*/
+
+    #text-presentation {
+        width: 25rem;
+        margin-right: 2rem;
+        line-height: 1rem;
+    } 
+
+    #text-presentation h1{
+        font-size: 2rem;  
+    }
+
+    #text-presentation h2{
+        font-size: 1.5rem;
+    }
+
+    #text-presentation p{   
+        font-weight: 300;  
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    #img-welcome {
+        width: 25rem;
+        height: auto;
+        border-radius: 40%;
+        transition: 0.7s;
+    }
+    /*-------------------------------------------*/
+
+    /*aboutme html*/
+    #structure-full-aboutme {
+        max-width: 924px;
+        width: 100%;
+    }
+
+    #content-presentation > p{
+        font-size: 1.5rem;
+        max-width: 600px;
+        line-height: 1.8rem;
+    }
+
+    #content-presentation > h2 {
+        font-size: 3rem;
+    }
+
+    /*Passions Section*/
+    #passions-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    #passions-tiles {
+        max-width: 924px;
+        width: 100%;
+    }
+
+    #passion-tile {
+        max-width: 250px;
+    }
+
+    #passion-tile > h3 {
+        font-size: 1.5rem;
+        letter-spacing: 0.08rem;
+    }
+
+    #passion-tile > p {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        letter-spacing: 0.09rem;
+    }
+    /*----------------------------*/
+
+    /*Habilidades Section*/
+    #habilidades-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    #skills-tiles {
+        grid-template-columns: 400px 400px;
+        max-width: 924px;
+    }
+
+    #skill-tile {
+        max-width: 325px;
+    }
+
+    #skill-tile > h3{
+        font-size: 1.5rem;
+    }
+
+    #skill-tile > h4{
+        font-size: 1.3rem;
+    }
+
+    #skill-tile > p {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    /*----------------------------*/
+
+    /*Footer Section*/
+    #footer-section p{
+        font-size: 2rem;
+        text-align: center;
+    }
+    /*----------------------------*/
+    /*-------------------------------------------*/
+
+    /*work html*/
+    #work-structure {
+        margin: 2.5rem auto 0 auto;
+        max-width: 924px;
+        width: 100%;
+    }
+
+    #work-presentation > p {
+        font-size: 1.5rem;
+        max-width: 600px;
+    }
+
+    #work-presentation > h2 {
+        font-size: 3.5rem;
+    }
+
+    #works-tiles {
+        grid-template-columns: 400px 400px;
+        max-width: 924px;
+    }
+
+    #work-tile > p {
+        font-size: 1rem;
+    }
+
+    #work-tile > h3{
+        font-size: 1.5rem;
+    }
+
+/*-------------------------------------------*/
+
+    /*contact html*/
+    #conact-structure {
+        max-width: 924px;
+    }
+
+    #contact-section p{
+        font-size: 1.5rem;
+        max-width: 1000px;
+    }
+
+    #contact-section > h2 {
+        font-size: 3rem;
+    }
+    /*-------------------------------------------*/
+}
+/*----------------------------*/
+
+
+/*16:9 Laptop 1366 resolution width*/
+@media (max-width: 1366px) {
+
+    /*welcome html*/
+
+    #img-welcome {
+        width: 15rem;
+        height: auto;
+        border-radius: 40%;
+        transition: 0.7s;
+    }
+
+    #img-welcome:hover {
+        width: 20rem;
+        height: auto;
+        border-radius: 0%;
+    }
+    /*-------------------------------------------*/
+
+    /*aboutme html*/
+    #structure-full-aboutme {
+        max-width: 1200x;
+        width: 100%;
+    }
+
+    #content-presentation > p{
+        font-size: 1.5rem;
+        max-width: 600px;
+        line-height: 1.8rem;
+    }
+
+    #content-presentation > h2 {
+        font-size: 3rem;
+    }
+
+    /*Passions Section*/
+    #passions-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    #passions-tiles {
+        max-width: 1200px;
+        width: 100%;
+    }
+    /*----------------------------*/
+
+    /*Habilidades Section*/
+    #habilidades-section > h2 {
+        font-size: 2.5rem;
+    }
+
+    #skills-tiles {
+        grid-template-columns: 400px 400px;
+        max-width: 1200px;
+    }
+    /*----------------------------*/
+
+    /*Footer Section*/
+    #footer-section p{
+        font-size: 2rem;
+        text-align: center;
+    }
+    /*----------------------------*/
+    /*-------------------------------------------*/
+
+    /*work html*/
+    #work-structure {
+        margin: 2.5rem auto 0 auto;
+        max-width: 1200;
+        width: 100%;
+    }
+
+    #works-tiles {
+        grid-template-columns: 400px 400px;
+        max-width: 1200px;
+    }
+/*-------------------------------------------*/
+
+    /*contact html*/
+    #conact-structure {
+        max-width: 1200px;
+    }
+
+    #contact-section p{
+        font-size: 2rem;
+        max-width: 1200px;
+    }
+    
+    #contact-section > h2 {
+        font-size: 4rem;
+    }
+    /*-------------------------------------------*/
+}
+
+/*Responsive*/
+@media (max-width: 400px) {
+
+    /*Menu diseno y configuracion*/
+    #menu li {
+        list-style: none;
+        padding: 0 rem;
+        margin-right: 0.3rem;  
+    } 
+
+    #menu li a{
+        padding: 0.3rem;
+        transition: 0.5s;
+    }
+
+    #menu {
+        font-size: 0.5rem;
+    }
+
+    /*-------------------------------------------*/
+
+    /*header html (aboutme, work and contactS*/
+    #header-gen {
+        max-width: 400px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #header-gen #marca-agua h1{
+        font-size: 0.4rem;
+        font-weight: 600;
+    }
+
+    #header-gen #menu{
+        font-size: 0.5rem;
+        padding: 0;
+        margin-right: -0.3rem;
+    }
+    /*-------------------------------------------*/
+
+    /*welcome html*/
+
+    #text-presentation {
+        width: 13rem;
+    } 
+
+    #text-presentation h1{
+        font-size: 1rem;  
+    }
+
+    #text-presentation h2{
+        font-size: .8rem;
+    }
+
+    #text-presentation p{
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+    }
+
+    #img-welcome {
+        width: 8rem;
+    }
+    /*-------------------------------------------*/
+
+    /*aboutme html*/
+    #structure-full-aboutme {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    #content-presentation > p{
+        font-size: 0.7rem;
+        max-width: 250px;
+        line-height: 1rem;
+    }
+
+    #content-presentation > h2 {
+        font-size: 1rem;
+        max-width: 100px;
+        width: 100%;
+    }
+
+    /*Passions Section*/
+    #passions-section > h2 {
+        font-size: 1.3rem;
+    }
+
+    #passions-tiles {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    #passion-tile {
+        max-width: 110px;
+    }
+
+    #passion-tile > h3 {
+        font-size: 0.8rem;
+        letter-spacing: 0.08rem;
+    }
+
+    #passion-tile > p {
+        font-size: 0.6rem;
+        font-weight: 500;
+        line-height: 1rem;
+        letter-spacing: 0.09rem;
+    }
+    /*----------------------------*/
+
+    /*Habilidades Section*/
+    #habilidades-section {
+        height: 250vh;
+    }
+
+    #habilidades-section > h2 {
+        font-size: 1.3rem;
+    }
+
+    #skills-tiles {
+        grid-template-columns: 300px;
+        max-width: 350px;
+    }
+
+    #skill-tile {
+        max-width: 325px;
+    }
+
+    #skill-tile > h3{
+        font-size: 0.8rem;
+    }
+
+    #skill-tile > h4{
+        font-size: 0.8rem;
+    }
+
+    #skill-tile > p {
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+    /*----------------------------*/
+
+    /*Footer Section*/
+    #footer-section p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    /*----------------------------*/
+    /*-------------------------------------------*/
+
+    /*work html*/
+    #work-structure {
+        margin: 2.5rem auto 0 auto;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    #work-presentation > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        max-width: 600px;
+    }
+
+    #work-presentation > h2 {
+        font-size: 1.5rem;
+    }
+
+    #works-tiles {
+        grid-template-columns: 350px;
+        max-width: 400px;
+    }
+
+    #work-tile > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+    }
+
+    #work-tile > h3{
+        font-size: 1rem;
+    }
+
+/*-------------------------------------------*/
+
+    /*contact html*/
+    #conact-structure {
+        max-width: 400px;
+    }
+
+    #contact-section p{
+        font-size: 1rem;
+        max-width: 350px;
+    }
+
+    #contact-section > h2 {
+        font-size: 1.5rem;
+    }
+    /*-------------------------------------------*/
+}
+/*----------------------------*/
+/*-------------------------------------------*/
